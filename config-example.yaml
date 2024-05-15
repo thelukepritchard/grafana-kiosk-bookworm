@@ -17,3 +17,4 @@ goauth:
   auto-login: false
   fieldname-username: username
   fieldname-password: password
+  
