@@ -53,7 +53,7 @@ jobs:
       - name: Package Release
         id: package-release
         env:
-          SOURCE_TAG: main
+          SOURCE_TAG: "1"
         run: |
           export RELEASE_TARGET_DIR=grafana-kiosk-$SOURCE_TAG
           mkdir $RELEASE_TARGET_DIR
