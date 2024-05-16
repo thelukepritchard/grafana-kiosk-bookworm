@@ -72,7 +72,7 @@ func generateExecutorOptions(dir string, cfg *Config) []chromedp.ExecAllocatorOp
 		chromedp.Flag("disable-sync", true),
 		chromedp.Flag("ignore-certificate-errors", cfg.Target.IgnoreCertificateErrors),
 		chromedp.Flag("incognito", true),
-		chromedp.Flag("kiosk", true),
+		chromedp.Flag("kiosk", false),
 		chromedp.Flag("noerrdialogs", true),
 		chromedp.Flag("start-fullscreen", true),
 		chromedp.Flag("start-maximized", true),
