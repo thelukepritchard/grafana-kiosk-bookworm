@@ -71,7 +71,6 @@ func generateExecutorOptions(dir string, cfg *Config) []chromedp.ExecAllocatorOp
 		chromedp.Flag("disable-overlay-scrollbar", true),
 		chromedp.Flag("disable-sync", true),
 		chromedp.Flag("ignore-certificate-errors", cfg.Target.IgnoreCertificateErrors),
-		chromedp.Flag("incognito", false),
 		chromedp.Flag("kiosk", true),
 		chromedp.Flag("noerrdialogs", true),
 		chromedp.Flag("start-fullscreen", true),
