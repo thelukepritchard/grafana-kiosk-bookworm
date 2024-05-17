@@ -12,10 +12,12 @@ import (
 
 // GrafanaKioskAWSLogin Provides login for AWS Managed Grafana instances
 func GrafanaKioskAWSLogin(cfg *Config, messages chan string) {
-	dir, err := os.MkdirTemp(os.TempDir(), "chromedp-kiosk")
+	dir, err := os.UserHomeDir()
 	if err != nil {
 		panic(err)
 	}
+
+	dir += "/.config/chromium"
 
 	log.Println("Using temp dir:", dir)
 	defer os.RemoveAll(dir)
